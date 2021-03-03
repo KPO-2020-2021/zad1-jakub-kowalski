@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h>       
 
 
 struct TrojmianKw {
@@ -41,7 +41,7 @@ int main() {
   
   if (Delta_2 > 0) {
 
-      Delta = sqrt( Delta_2 );
+      Delta = sqrt( Delta_2 );                /* Aby skompilowac program kompilatorem gcc wymagana jest flaga -lm, natomiast dla kompilatora g++, program kompiluje sie bez niej */
       X1 = (-TKw.b - Delta) / (2*TKw.a);
       X2 = (-TKw.b + Delta) / (2*TKw.a);
       Ilosc_Pierwiastkow = 2;      
