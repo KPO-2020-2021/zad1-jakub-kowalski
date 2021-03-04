@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 
 
@@ -125,7 +126,7 @@ int IloscWielkichLiter(char *Tekst)
 
 int main()
 {
-  char *Napis = "Jak dobrze jest wstac skoro swit. Jutrzenki blask ...";
+  char Napis[] = "Jak dobrze jest wstac skoro swit. Jutrzenki blask ...";   /* zmieniono wskaznik na tablice */
   int IloscSpacji;
   int DlugoscSlowaXXX;
   int IloscMaLiter = 0;
